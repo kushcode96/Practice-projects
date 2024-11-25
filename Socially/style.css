@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: url('images/back-image.png');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+nav {
+    margin: 10px 0px;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav img {
+    width: 130px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px 15px;
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 700;
+    color: black;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    font-size: 20px;
+}
+
+.log {
+    text-decoration: none;
+    margin: 5px 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.log:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 25px;
+    padding: 8px 18px;
+    background: linear-gradient(45deg, #6b3099, #de75dd);
+    color: white;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.btn:hover {
+  border-bottom-left-radius: 25px;
+}
+
+ .container{
+    margin: 10% 10%;
+    width: 550px;
+ }
+ h1{
+    font-size: 60px;
+ }
+ .container p{
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    animation-delay: 0.5s;
+ }
+.con-btn{
+    padding: 10px 40px;
+    animation-delay: 1s;
+}
+ .human{
+    width: 450px;
+    margin-top: 10%;
+    position: absolute;
+    bottom: 0px;
+    right: 15%;
+    animation-delay: 1.5s;
+
+ }
+
+  .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation-name: moveup;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes moveup {
+     100%{
+        opacity: 1;
+        transform: translateY(0px);
+     }
+  }
