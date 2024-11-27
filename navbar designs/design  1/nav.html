@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">web app</a></div>
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+
+            <a href="" class="btn">Subscribe</a>
+
+            <div class="bar-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li> <a href="" class="btn">Subscribe</a></li>
+        </div>
+    </header>
+   <main>
+        <div id="home">
+            <h1>welcome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam!</p>
+        </div>
+   </main>
+
+
+
+
+
+    <script>
+        let togglebtn = document.querySelector(".bar-icon");
+        let dropdownmenu = document.querySelector(".dropdown_menu");
+        let toggleicon = document.querySelector(".bar-icon i");
+
+
+        togglebtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            let isopen = dropdownmenu.classList.contains('open');
+            toggleicon.classList = isopen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+
+        }
+        // togglebtn.addEventListener('click', ()=>{
+        //        dropdownmenu.classList.toggle('open')
+        // })
+    </script>
+</body>
+
+</html>
